@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/img/ativ.jpg);
+    background-attachment:fixed;
+    background-size: cover;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: 15%;
+
+}
+
+#header {
+    margin-top: 50px;
+}
+
+#add-task-form {
+    position: relative;
+}
+
+#add-task-form input {
+    box-sizing: border-box;
+    border: 1px solid #adb1ad;
+    background: white;
+    color: blueviolet;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    
+}
+
+#add-task-form input:focus {
+    outline: none;
+}
+
+#add-btn-hover {
+    position: absolute;
+    background: white;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 53px;
+    cursor: pointer;
+    border: 1px solid #adb1ad;
+
+
+}
+
+#add-btn-hover:hover {
+    background-color: greenyellow;
+}
+
+ion-icon {
+    font-size: 30px;
+    
+}
+
+/*inicio lista */
+
+#list {
+    list-style: none;
+    padding: 0;
+}
+
+#list li {
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid #adb1ad;
+    background-color: white;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#list ion-icon {
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    transition: .5s;
+    padding: 5px;
+}
+
+.done-btn {
+    right: 40px;
+}
+
+.remove-btn {
+    right: 0;
+}
+
+.done-btn:hover {
+    background: rgba(52, 192, 52, 0.767);
+}
+
+.remove-btn:hover {
+    background: rgba(243, 49, 49, 0.767);
+}
+
+#list li span {
+    font-size: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+#list li.done {
+    background-color: rgb(81, 167, 85);
+    color: white;
+    text-decoration: line-through;
+    color: rgb(7, 59, 23);
+}
